@@ -9,7 +9,7 @@ import 'bootstrap/dist/js/bootstrap';
 import '../assets/styles/App.scss';
 
 const App = () => (
-  <div className='container'>
+  <div>
     <Header />
     <Carrusel />
     <Menu />

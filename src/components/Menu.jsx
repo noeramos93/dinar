@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faHome,
@@ -17,16 +18,16 @@ const Menu = () => (
         <div className='col-md-12'>
           <ul className='nav justify-content-center'>
             <li className='nav-item'>
-              <a className='nav-item-dark active' href='index.html'>
+              <Link className='nav-item-dark active' to='/'>
                 <FontAwesomeIcon icon={faHome} />
                 Home
-              </a>
+              </Link>
             </li>
             <li className='nav-item'>
-              <a className='nav-item-dark' href='proyectos.html'>
+              <Link className='nav-item-dark' to='/proyectos'>
                 <FontAwesomeIcon icon={faFolderOpen} />
                 Proyectos
-              </a>
+              </Link>
             </li>
             <li className='nav-item dropdown'>
               <a className='nav-item-dark dropdown-toggle' data-toggle='dropdown' href='foo' role='button' aria-haspopup='true' aria-expanded='false'>

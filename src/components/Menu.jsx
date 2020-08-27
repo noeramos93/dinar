@@ -20,40 +20,47 @@ const Menu = () => (
             <li className='nav-item'>
               <Link className='nav-item-dark active' to='/'>
                 <FontAwesomeIcon icon={faHome} />
+                {' '}
                 Home
               </Link>
             </li>
             <li className='nav-item'>
               <Link className='nav-item-dark' to='/proyectos'>
                 <FontAwesomeIcon icon={faFolderOpen} />
+                {' '}
                 Proyectos
               </Link>
             </li>
             <li className='nav-item dropdown'>
               <a className='nav-item-dark dropdown-toggle' data-toggle='dropdown' href='foo' role='button' aria-haspopup='true' aria-expanded='false'>
                 <FontAwesomeIcon icon={faPencilRuler} />
+                {' '}
                 Servicios
               </a>
               <div className='dropdown-menu'>
-                <a className='dropdown-item' href='diseños.html'>
+                <Link className='dropdown-item' to='/diseño'>
                   <FontAwesomeIcon icon={faObjectGroup} />
+                  {' '}
                   Diseños
-                </a>
-                <a className='dropdown-item' href='ingenieria.html'>
+                </Link>
+                <Link className='dropdown-item' to='/ingenieria'>
                   <FontAwesomeIcon icon={faDraftingCompass} />
+                  {' '}
                   Ingenieria
-                </a>
-                <a className='dropdown-item' href='arquitectura.html'>
+                </Link>
+                <Link className='dropdown-item' to='/arquitectura'>
                   <FontAwesomeIcon icon={faCity} />
+                  {' '}
                   Arquitectura
-                </a>
+                </Link>
               </div>
             </li>
             <li className='nav-item'>
-              <a className='nav-item-dark' href='contacto.html'>
+              <Link className='nav-item-dark' to='/contacto'>
                 <FontAwesomeIcon icon={faAddressCard} />
+                {' '}
                 Contacto
-              </a>
+              </Link>
             </li>
           </ul>
         </div>

@@ -1,4 +1,6 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faMapMarkerAlt, faPhoneAlt, faEnvelopeOpen } from '@fortawesome/free-solid-svg-icons';
 
 const Contacto = () => (
   <>
@@ -13,7 +15,7 @@ const Contacto = () => (
             <div className='col-md-6'>
               <div className='card border-light mb-3'>
                 <div className='card-body'>
-                  <h5 className='card-title text-center'><i class='fas fa-map-marked-alt'></i></h5>
+                  <h5 className='card-title text-center'><FontAwesomeIcon icon={faMapMarkerAlt} size='5x' /></h5>
                   <h6 className='card-subtitle mb-2 text-muted'>Ubicación</h6>
                   <p className='card-text text-justify'>Plaza Mayor #124. Col. Plazas del Sol 3ª Sección. C.P. 76099, Querétaro, Qro. México.</p>
                 </div>
@@ -23,7 +25,7 @@ const Contacto = () => (
             <div className='col-md-6'>
               <div className='card border-light mb-3'>
                 <div className='card-body'>
-                  <h5 className='card-title text-center'><i class='fas fa-phone-volume'></i></h5>
+                  <h5 className='card-title text-center'><FontAwesomeIcon icon={faPhoneAlt} size='5x' /></h5>
                   <h6 className='card-subtitle mb-2 text-muted'>LLamanos</h6>
                   <p className='card-text text-justify'>
                     <br />
@@ -39,9 +41,14 @@ const Contacto = () => (
             <div className='col-md-6'>
               <div className='card border-light mb-3'>
                 <div className='card-body'>
-                  <h5 className='card-title text-center'><i class='fas fa-envelope-open'></i></h5>
+                  <h5 className='card-title text-center'><FontAwesomeIcon icon={faEnvelopeOpen} size='5x' /></h5>
                   <h6 className='card-subtitle mb-2 text-muted'>Envia un correo</h6>
-                  <p className='card-text text-justify'><br/>dinar.proyectos@outlook.com<br/><br/></p>
+                  <p className='card-text text-justify'>
+                    <br />
+                    dinar.proyectos@outlook.com
+                    <br />
+                    <br />
+                  </p>
                 </div>
               </div>
             </div>
@@ -56,19 +63,19 @@ const Contacto = () => (
 
                   <form id='frmEmail' action='#'>
                     <div className='form-group'>
-                      <label for='nameCli'>Nombre</label>
+                      Nombre:
                       <input type='text' className='form-control' id='nameCli' placeholder='Nombre' />
                     </div>
                     <div className='form-group'>
-                      <label for='emailCli'>Email</label>
+                      Email:
                       <input type='text' className='form-control' id='emailCli' placeholder='ejemplo@ejemplo.com' />
                     </div>
                     <div className='form-group'>
-                      <label for='subjectCli'>Motivo</label>
+                      Motivo:
                       <input type='text' className='form-control' id='subjectCli' placeholder='Cotización' />
                     </div>
                     <div className='form-group'>
-                      <label htmlFor='messajeCli'>Mensaje</label>
+                      Mensaje:
                       <textarea id='messajeCli' className='form-control' aria-label='With textarea' placeholder='Hola buenas tardes ....' />
                     </div>
                     <button type='submit' className='btn btn-primary'>Enviar</button>

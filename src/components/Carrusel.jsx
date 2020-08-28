@@ -14,21 +14,21 @@ const Carrusel = () => (
         </ol>
         <div className='carousel-inner'>
           <div className='carousel-item active'>
-            <img className='d-block' src={ImgCarrusel1} alt='First slide' />
+            <img className='rounded mx-auto img-fluid' src={ImgCarrusel1} alt='First slide' />
             <div className='carousel-caption d-none d-md-block'>
               <h5>Diseños</h5>
               <p>Mejores diseños.</p>
             </div>
           </div>
           <div className='carousel-item'>
-            <img className='d-block' src={ImgCarrusel2} alt='Second slide' />
+            <img className='rounded mx-auto img-fluid' src={ImgCarrusel2} alt='Second slide' />
             <div className='carousel-caption d-none d-md-block'>
               <h5>Ingenieria</h5>
               <p>Para tus hobras.</p>
             </div>
           </div>
           <div className='carousel-item'>
-            <img className='d-block' src={ImgCarrusel3} alt='Third slide' />
+            <img className='rounded mx-auto img-fluid' src={ImgCarrusel3} alt='Third slide' />
             <div className='carousel-caption d-none d-md-block'>
               <h5>Construccion</h5>
               <p>¿Necesitas remodelar?.</p>
